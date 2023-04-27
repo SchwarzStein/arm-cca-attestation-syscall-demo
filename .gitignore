@@ -1,0 +1,15 @@
+*.swp
+*.swo
+out/*
+Cargo.lock
+__pycache__
+
+third-party/*
+!third-party/tf-rmm
+!third-party/tf-a
+attestation-demo/call
+attestation-demo/client
+attestation-demo/server
+
+assets/
+assets.tar.gz
