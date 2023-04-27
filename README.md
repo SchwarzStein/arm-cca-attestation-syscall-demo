@@ -62,7 +62,12 @@ touch /dev/null
 ifocnfig lo 127.0.0.1 netmask 255.0.0.0 up
 ``` 
 
+Or, you can use `call` to directly get a formatted realm token in the Realm
+world, without the client/server.
 
+```
+./call
+```
 
 # "Borrowed" from islet (samsung)
 

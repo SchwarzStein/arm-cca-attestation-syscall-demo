@@ -55,7 +55,6 @@ int main(int argc, char const *argv[]) {
 	int size;
 	
 	// init CHALLENGE
-	// TODO user user input as challenge e.g. from pipe
 	init_challenge(argc, argv, challenge, CHALLENGE_N_BYTES);
 	printf("using challenge:\n");
 	print_challenge(challenge, CHALLENGE_N_BYTES);

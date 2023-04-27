@@ -79,7 +79,6 @@ int main(int argc, char const *argv[]) {
 		}
 		printf("\n");
 
-		// TODO read actual token
 		// return length of token on success, otherwise return -1
 		len = get_attest_token(token, challenge_buffer);
 		if (len < 0){
