@@ -36,7 +36,8 @@ cd /shared/guest
 ```
 
 **In the realm VM**:  
-run the attestation demo:  
+run the attestation demo without client server, simply parse and print the
+attestation token.
 ```
 # simply get and parse the (realm) attestation token 
 ./call
@@ -62,12 +63,6 @@ touch /dev/null
 ifocnfig lo 127.0.0.1 netmask 255.0.0.0 up
 ``` 
 
-Or, you can use `call` to directly get a formatted realm token in the Realm
-world, without the client/server.
-
-```
-./call
-```
 
 # "Borrowed" from islet (samsung)
 
