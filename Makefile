@@ -67,12 +67,9 @@ init: third-party-source assets
 	@git -C $(TF-RMM) checkout $(COMMIT_TF-RMM)
 	@git -C $(TF-A) checkout $(COMMIT_TF-A)
 
-assets: unzip_assets
+assets:
+	./prepare_assets.sh
 
-unzip_assets: 
-	# @tar -zxvf assets.tar.gz
-
-# this is optional
 realm: realm_guest_shared
 
 realm_guest_shared: kvmtool realm-linux attestation-demo
