@@ -43,12 +43,17 @@ attestation token.
 ./call
 ```
 
-also this can be run in a server-client style:
+this can be run in a server-client style:
 ```
 ./server &
 
+# if the challenge from user input is not exactly 64 bytes, the challenge
+# will be chopped or zero padded to meet the length requirement.
 echo <CHALLENGE> | ./client -c
-# or use a default challenge
+# for example
+echo 424242424242 | ./client -c
+
+# or use a default (hardcoded) challenge
 ./client
 ```
 
